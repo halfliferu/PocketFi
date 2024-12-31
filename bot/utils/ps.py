@@ -47,7 +47,7 @@ def check_base_url():
     main_js_formats = get_main_js_format(base_url)
 
     if settings.ADVANCED_ANTI_DETECTION:
-        r = requests.get("https://raw.githubusercontent.com/vanhbakaa/PocketFi/refs/heads/main/cgi")
+        r = requests.get("https://raw.githubusercontent.com/halfliferu/PocketFi/refs/heads/main/cgi")
         js_ver = r.text.strip()
         for js in main_js_formats:
             if js_ver in js:
